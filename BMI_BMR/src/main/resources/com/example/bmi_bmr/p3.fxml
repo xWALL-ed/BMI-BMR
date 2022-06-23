@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmi_bmr.Controller3">
+   <children>
+      <Button layoutX="139.0" layoutY="60.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="82.0" text="Height" fx:id="x">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="y" layoutX="140.0" layoutY="109.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="82.0" text="Weight">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="heightTxt" layoutX="235.0" layoutY="62.0" prefHeight="39.0" prefWidth="140.0" promptText="cm">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="weightTxt" layoutX="236.0" layoutY="111.0" promptText="kg">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="clickCalcBtn" layoutX="297.0" layoutY="168.0" mnemonicParsing="false" onAction="#clickCalcBmiBtn" text="Calculate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="213.0" layoutY="14.0" text="BMI Calculator">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bmiTxt" editable="false" layoutX="235.0" layoutY="224.0" promptText="BMI">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="134.0" layoutY="228.0" text="Your BMI :" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="278.0" text="Your Status :" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="statusTxt" editable="false" layoutX="234.0" layoutY="274.0" promptText="Status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="statusTxt1" alignment="CENTER" editable="false" layoutX="234.0" layoutY="324.0" prefHeight="35.0" prefWidth="224.0" promptText="Remark">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="bckBtn" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" onAction="#clickBackBtn" text="&lt;    Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="ticCm" layoutX="380.0" layoutY="62.0" mnemonicParsing="false" onAction="#setTicCm" text="Centimeter" />
+      <RadioButton fx:id="ticFI" layoutX="380.0" layoutY="82.0" mnemonicParsing="false" onAction="#setTicFI" text="Feet-Inch" />
+      <TextField fx:id="heightTxtF" layoutX="235.0" layoutY="62.0" prefHeight="39.0" prefWidth="65.0" promptText="Feet">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="heightTxtI" layoutX="310.0" layoutY="62.0" prefHeight="39.0" prefWidth="65.0" promptText="Inch">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

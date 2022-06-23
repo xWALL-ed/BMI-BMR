@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmi_bmr.Controller1">
+   <children>
+      <Label layoutX="170.0" layoutY="110.0" text="Username :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="269.0" layoutY="112.0" promptText="Username" />
+      <Label layoutX="191.0" layoutY="169.0" text="Gender :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="269.0" layoutY="230.0" mnemonicParsing="false" onAction="#clickNxtBtn" text="Next                 &gt;" />
+      <ComboBox fx:id="g" layoutX="269.0" layoutY="170.0" prefWidth="150.0" promptText="Male/Female" />
+   </children>
+</AnchorPane>

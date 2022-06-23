@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmi_bmr.Controller4">
+   <children>
+      <Button fx:id="a" layoutX="133.0" layoutY="51.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="88.0" text="Age">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="b" layoutX="133.0" layoutY="100.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="88.0" text="Height">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="c" layoutX="134.0" layoutY="149.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="88.0" text="Weight">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtAge" layoutX="235.0" layoutY="53.0" prefHeight="39.0" prefWidth="224.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="txtHeight" layoutX="235.0" layoutY="102.0" prefHeight="39.0" prefWidth="140.0" promptText="cm">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtWeight" layoutX="236.0" layoutY="151.0" promptText="kg">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="256.0" layoutY="249.0" mnemonicParsing="false" onAction="#clickCalcBtn" text="Calculate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="213.0" layoutY="10.0" text="BMR Calculator">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBmr" editable="false" layoutX="235.0" layoutY="301.0" promptText="BMR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="134.0" layoutY="305.0" text="Your BMR :" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="bckBtn" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" onAction="#clickBackBtn" text="&lt;    Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="d" layoutX="133.0" layoutY="197.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="88.0" text="Activity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="boxActivity" layoutX="235.0" layoutY="197.0" prefHeight="39.0" prefWidth="224.0" promptText="Activity" />
+      <CheckBox fx:id="ticMale" layoutX="382.0" layoutY="249.0" mnemonicParsing="false" onAction="#setTicMale" text="Male" />
+      <CheckBox fx:id="ticFemale" layoutX="382.0" layoutY="271.0" mnemonicParsing="false" onAction="#setTicFemale" text="Female" />
+      <Label fx:id="msg" layoutX="162.0" layoutY="349.0" />
+      <TextField fx:id="txtHeightI" layoutX="310.0" layoutY="102.0" prefHeight="39.0" prefWidth="65.0" promptText="Inch">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtHeightF" layoutX="235.0" layoutY="102.0" prefHeight="39.0" prefWidth="65.0" promptText="Feet">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="fiTic" layoutX="380.0" layoutY="122.0" mnemonicParsing="false" onAction="#setFiTic" text="Feet-Inch" />
+      <RadioButton fx:id="cmTic" layoutX="380.0" layoutY="102.0" mnemonicParsing="false" onAction="#setCmTic" text="Centimeter" />
+   </children>
+</AnchorPane>
